@@ -2,10 +2,37 @@ package varejo;
 
 public class Vendas {
 
-	public Vendedores vendedor;
+	public String vendedor;
 	private String horavenda;
 	private String ganho;
 	private String quantidade;
+	
+	public Vendas(String vendedor, String hora, String ganho) {
+		this.vendedor = vendedor;
+		this.ganho = ganho;
+		this.horavenda = hora;
+		
+	}
+	
+
+	public String getHoravenda() {
+		return horavenda;
+	}
+	public String getGanho() {
+		return ganho;
+	}
+	public String getQuantidade() {
+		return quantidade;
+	}
+	public void setHoravenda(String horavenda) {
+		this.horavenda = horavenda;
+	}
+	public void setGanho(String ganho) {
+		this.ganho = ganho;
+	}
+	public void setQuantidade(String quantidade) {
+		this.quantidade = quantidade;
+	}
 	
 	
 	
