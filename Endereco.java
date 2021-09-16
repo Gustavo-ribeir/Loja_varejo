@@ -10,6 +10,14 @@ public class Endereco {
 	private  String cep;
 	
 	
+	public Endereco(String rua, String numero, String bairro, String cidade, String estado, String cep) {
+		this.rua = rua;
+		this.numero = numero;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.cep = cep;
+	}
 	public String getRua() {
 		return rua;
 	}
@@ -47,6 +55,10 @@ public class Endereco {
 		this.cep = cep;
 	} 
 	
-	
+	@Override 
+	public String toString() {
+		return String.format("o endereço da nossa loja é %s, %s, $s, %s, %s, nosso cep é:%s",this.rua, this.bairro, this.cidade, this.estado, this.numero, this.cep);
+		
+	}
 
 }

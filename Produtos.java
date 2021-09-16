@@ -17,5 +17,9 @@ public class Produtos {
 		return fornecedores;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return String.format("o produto é %s, o preço é %s, e a data de validade é %s", this.produto,this.preco,this.validade);
+		
+	}
 }

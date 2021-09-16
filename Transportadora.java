@@ -42,7 +42,11 @@ public class Transportadora {
 	}
 	
 	
-	
+	@Override
+	public String toString() {
+		return String.format("o nome da transportadora é: %s, o carro usado é: %s, o custo da entrega é: %s",this.nomeEmpresa,this.carroTransporte,this.custo);
+		
+	}
 	
 	
 	

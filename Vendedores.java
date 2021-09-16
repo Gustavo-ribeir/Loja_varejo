@@ -37,7 +37,11 @@ public class Vendedores {
 		this.tempoEmpresa = tempoEmpresa;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return String.format("O nome do vendedor é%s, o salario dele é %s ",this.nomeVendedor,this.salario);
+		
+	}
 	
 	
 	

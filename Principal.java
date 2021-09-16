@@ -2,12 +2,9 @@ package varejo;
 
 public class Principal {
 	public static void main(String[] args) {
-		Endereco end1 = new Endereco();
-		end1.setRua("Júlio de Castilhos");
-		end1.setCidade("Caxias do Sul");
-		end1.setBairro("Centro");
-		end1.setCep("000");
-	}	
+		Endereco endereco = new Endereco("Pinheiro", "564", "Caxias do Sul", "Centro", "RS", "000");
+		
+	
 	Clientes luiz = new Clientes("Luiz Gomes", "4322", "4284", "635156341");
 	
 	Estoque estado = new Estoque("Doritos", "100", "24/06");
@@ -22,5 +19,33 @@ public class Principal {
 			
 	Vendedores rogerio = new Vendedores("Rogerio Richtofen", "2000,00", "060");
 	
+		
 	
-} 
+		System.out.println(endereco.toString());
+
+		System.out.println(luiz.toString());
+		
+		System.out.println(estado.toString());
+		
+		System.out.println(coca.toString());
+		
+		System.out.println(doritos.toString());
+		
+		System.out.println(joaoentregas.toString());
+		
+		System.out.println(jose.toString());
+		
+		System.out.println(rogerio.toString());
+		
+		
+		
+		
+		
+	}
+}	
+	
+
+
+	
+
+	

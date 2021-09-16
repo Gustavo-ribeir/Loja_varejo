@@ -40,7 +40,10 @@ public class Clientes {
 	}
 	
 	
-	
+	@Override
+	public String toString() {
+		return String.format("as informações do cliente são nome: %s , cpf: %s , rg: %s , telefone: %s",this.nomeCompleto, this.cpf, this.rg, this.telefone);
+	}
 	
 	
 	

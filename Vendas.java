@@ -34,7 +34,11 @@ public class Vendas {
 		this.quantidade = quantidade;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return String.format("o vendedor foi %s, o ganho foi %s, a hora da venda foi %s",this.vendedor,this.ganho,this.horavenda);
+		
+	}
 	
 	
 	

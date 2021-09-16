@@ -33,7 +33,11 @@ public class Estoque {
 		this.quantidade = quantidade;
 	}
 	
-		
+		@Override
+		public String toString() {
+			return String.format("o produto é: %s, a quantidade do %s é: %s, a data da chegada é: %s",this.produto,this.produto,this.quantidade, this.dataChegada );
+			
+		}
 		
 		
 	

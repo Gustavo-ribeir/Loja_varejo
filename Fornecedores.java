@@ -42,7 +42,10 @@ public class Fornecedores {
 	}
 	
 	
-	
+	@Override
+	public String toString() {
+		return String.format("o produto é: %s, a empresa é a: %s, a data de saida é: %s, o preço da %s é: %s",this.produto, this.nomeEmpresa,this.dataSaida,this.produto,this.preco);
+	}
 	
 	
 }
